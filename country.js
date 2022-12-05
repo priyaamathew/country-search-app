@@ -47,6 +47,13 @@ result.innerHTML=`
 `
 
 
+}).catch(()=>{
+    if(countryname.length===0){
+        result.innerHTML=`<h4>The input field is cannot be empty</h4>
+        `
+    }else{
+         result.innerHTML=`<h4>Please enter a valid countryname</h4>`
+    }
 })
 });
 
